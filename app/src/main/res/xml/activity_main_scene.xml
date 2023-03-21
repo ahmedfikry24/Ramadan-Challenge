@@ -3,14 +3,88 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/background_right"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/background_right"
+            app:layout_constraintTop_toTopOf="parent"
+            android:rotation="90"
+            />
 
+        <Constraint
+            android:id="@+id/helal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/helal"
+            app:layout_constraintBottom_toTopOf="@id/mask_group"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <Constraint
+            android:id="@+id/mask_group"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/mask_group"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/ramadan"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/mask_group"
+            app:layout_constraintStart_toStartOf="@id/mask_group"
+            app:layout_constraintEnd_toEndOf="@id/mask_group"
+            android:src="@drawable/ramdan_kareem"
+            />
 
 
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
 
+        <Constraint
+            android:id="@+id/background_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/background_right"
+            app:layout_constraintTop_toTopOf="parent"
+            android:rotation="90"
+            android:layout_marginTop="-550dp"
+            />
 
+        <Constraint
+            android:id="@+id/helal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/helal"
+            app:layout_constraintBottom_toTopOf="@id/mask_group"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="100dp"
+            />
+
+        <Constraint
+            android:id="@+id/mask_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mask_group"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/ramadan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/mask_group"
+            app:layout_constraintStart_toStartOf="@id/mask_group"
+            app:layout_constraintEnd_toEndOf="@id/mask_group"
+            android:src="@drawable/ramdan_kareem"
+            />
     </ConstraintSet>
 
     <Transition
@@ -19,7 +93,6 @@
         app:autoTransition="animateToEnd"
         app:duration="2000"
         >
-
 
     </Transition>
 </MotionScene>
