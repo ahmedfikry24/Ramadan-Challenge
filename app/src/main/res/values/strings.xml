@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Ramadan Challenge</string>
+    <string name="fajir">Fajir</string>
+    <string name="_04_12_am">04:12 AM</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="_5_46_am">05:46 AM</string>
+    <string name="duher">Duher</string>
+    <string name="_12_43_pm">12:43 PM</string>
+    <string name="asr">Asr</string>
+    <string name="_4_20_pm">04:20 PM</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="_6_09_pm">06:09 PM</string>
+    <string name="isha">Isha</string>
+    <string name="_7_24_pm">07:24 PM</string>
 </resources>
