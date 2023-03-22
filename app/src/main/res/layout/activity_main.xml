@@ -12,23 +12,36 @@
         android:id="@+id/ramadan_mubark"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:visibility="gone"
         app:lottie_autoPlay="true"
         app:lottie_loop="false"
-        app:lottie_rawRes="@raw/ramadan_mubarak" />
+        app:lottie_rawRes="@raw/ramadan_mubarak"
+        android:layout_marginTop="82dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_mosque"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/mosque"
+        app:layout_constraintTop_toBottomOf="@id/ramadan_mubark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/netedScroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:visibility="visible"
         android:layout_marginHorizontal="@dimen/margin_16"
-        >
+        android:orientation="vertical"
+        android:visibility="visible">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -42,83 +55,83 @@
                 android:visibility="visible"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
-                app:lottie_rawRes="@raw/month_of_ramadan"
-                />
+                app:lottie_rawRes="@raw/month_of_ramadan" />
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
+                android:layout_marginHorizontal="@dimen/margin_16"
                 android:background="@color/white"
-                >
-                
+                app:cardCornerRadius="8dp">
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:paddingVertical="@dimen/margin_10"
-    android:layout_marginHorizontal="@dimen/margin_10"
-    >
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/fajir"
-    android:textSize="16sp"
-    />
 
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="@dimen/margin_10"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/margin_10">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/_04_12_am"
-        android:textSize="16sp"
-        />
-</LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fajir"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_04_12_am"
+                            android:textSize="16sp" />
+                    </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
-                android:background="@color/white"
+                android:layout_marginHorizontal="@dimen/margin_16"
                 android:layout_marginTop="@dimen/margin_16"
+                android:background="@color/white"
+                app:cardCornerRadius="8dp"
+
                 >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:paddingVertical="@dimen/margin_10"
                         android:layout_marginHorizontal="@dimen/margin_10"
-                        >
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/margin_10">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/sunrise"
-                            android:textSize="16sp"
-                            />
+                            android:textSize="16sp" />
 
                         <Space
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/_5_46_am"
-                            android:textSize="16sp"
-                            />
+                            android:textSize="16sp" />
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
@@ -126,39 +139,38 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
-                android:background="@color/white"
+                android:layout_marginHorizontal="@dimen/margin_16"
                 android:layout_marginTop="@dimen/margin_16"
-                >
+                android:background="@color/white"
+                app:cardCornerRadius="8dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:paddingVertical="@dimen/margin_10"
                         android:layout_marginHorizontal="@dimen/margin_10"
-                        >
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/margin_10">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/duher"
-                            android:textSize="16sp"
-                            />
+                            android:textSize="16sp" />
 
                         <Space
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/_12_43_pm"
-                            android:textSize="16sp"
-                            />
+                            android:textSize="16sp" />
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
@@ -166,39 +178,38 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
-                android:background="@color/white"
+                android:layout_marginHorizontal="@dimen/margin_16"
                 android:layout_marginTop="@dimen/margin_16"
-                >
+                android:background="@color/white"
+                app:cardCornerRadius="8dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:paddingVertical="@dimen/margin_10"
                         android:layout_marginHorizontal="@dimen/margin_10"
-                        >
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/margin_10">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/asr"
-                            android:textSize="16sp"
-                            />
+                            android:textSize="16sp" />
 
                         <Space
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/_4_20_pm"
-                            android:textSize="16sp"
-                            />
+                            android:textSize="16sp" />
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
@@ -206,39 +217,38 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
-                android:background="@color/white"
+                android:layout_marginHorizontal="@dimen/margin_16"
                 android:layout_marginTop="@dimen/margin_16"
-                >
+                android:background="@color/white"
+                app:cardCornerRadius="8dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:paddingVertical="@dimen/margin_10"
                         android:layout_marginHorizontal="@dimen/margin_10"
-                        >
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/margin_10">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/maghrib"
-                            android:textSize="16sp"
-                            />
+                            android:textSize="16sp" />
 
                         <Space
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/_6_09_pm"
-                            android:textSize="16sp"
-                            />
+                            android:textSize="16sp" />
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
@@ -246,39 +256,38 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
-                android:background="@color/white"
+                android:layout_marginHorizontal="@dimen/margin_16"
                 android:layout_marginTop="@dimen/margin_16"
-                >
+                android:background="@color/white"
+                app:cardCornerRadius="8dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:paddingVertical="@dimen/margin_10"
                         android:layout_marginHorizontal="@dimen/margin_10"
-                        >
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/margin_10">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/isha"
-                            android:textSize="16sp"
-                            />
+                            android:textSize="16sp" />
 
                         <Space
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/_7_24_pm"
-                            android:textSize="16sp"
-                            />
+                            android:textSize="16sp" />
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
